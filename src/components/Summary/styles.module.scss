@@ -1,0 +1,52 @@
+.cardsWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+
+  .card {
+    display: flex;
+    align-items: center;
+    background: var(--white);
+
+    width: 22.5%;
+    border-radius: 1.5rem;
+    padding: 1.5rem 2.5rem 1.5rem 1.5rem;
+    box-shadow: 0px 1px 8px var(--gray-300);
+
+    .textCard {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    svg {
+      color: var(--purple);
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      color: var(--gray-500);
+      font-weight: 500;
+    }
+
+    strong {
+      font-size: 1.5rem;
+      color: var(--black-100);
+      font-weight: 600;
+    }
+
+    .negativeTotal {
+      font-size: 1.5rem;
+      color: var(--red);
+      font-weight: 600;
+    }
+
+    .total {
+      font-size: 1.5rem;
+      color: var(--green);
+      font-weight: 600;
+    }
+  }
+}

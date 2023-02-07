@@ -1,0 +1,16 @@
+.pageContainer {
+  display: flex;
+  background: var(--black-10);
+}
+
+.mainContent {
+  width: 100%;
+  flex: 6.5;
+  display: flex;
+  align-items: flex-start;
+}
+
+.content {
+  padding: 2rem 4rem;
+  width: 70%;
+}

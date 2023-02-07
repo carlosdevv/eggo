@@ -1,0 +1,194 @@
+.transactionsContainer {
+  margin-top: 5rem;
+
+  .title {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+
+    h1 {
+      font-size: 1.5rem;
+      color: var(--white);
+      font-weight: 700;
+    }
+
+    span {
+      font-size: 0.9rem;
+      color: var(--gray-300);
+    }
+  }
+}
+
+.table {
+  margin-top: 0.5rem;
+  width: 100%;
+  border-spacing: 0 1.25rem;
+
+  .colum_1 {
+    width: 30%;
+  }
+
+  .colum_2 {
+    width: 20%;
+    padding-left: 1rem;
+  }
+  .colum_3 {
+    width: 30%;
+  }
+  .colum_4 {
+    width: 30%;
+  }
+
+  th {
+    color: var(--gray-300);
+    font-weight: 400;
+    padding: 1rem 0rem;
+    text-align: left;
+    line-height: 1.5rem;
+  }
+
+  .transactionColumnOne {
+    display: flex;
+    align-items: center;
+
+    svg {
+      font-size: 40px;
+
+      padding: 0.55rem;
+      border-radius: 1rem;
+
+      color: var(--gray-50);
+      background: var(--black);
+    }
+
+    .titleColumn {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+
+      td {
+        padding: 0 0 0 1rem;
+        border: 0;
+
+        h1 {
+          color: var(--gray-50);
+          font-size: 1rem;
+          font-weight: 400;
+        }
+
+        span {
+          color: var(--gray-500);
+          font-size: 0.9rem;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+
+  td {
+    padding: 1rem 0;
+    border: 0;
+    color: var(--gray-50);
+
+    .transactionType {
+      border-radius: 0.5rem;
+      padding: 0.5rem 1rem;
+      font-size: 0.75rem;
+
+      background: var(--green-dark);
+      color: var(--green);
+      text-align: center;
+    }
+
+    .transactionTypePickup {
+      border-radius: 0.5rem;
+      padding: 0.5rem 1.4rem;
+      font-size: 0.75rem;
+
+      background: var(--red-dark);
+      color: var(--red);
+      text-align: center;
+    }
+
+    .dateColumn {
+      color: var(--gray-50);
+      text-transform: capitalize;
+    }
+
+    > button {
+      border: 0;
+      background: transparent;
+
+      svg {
+        font-size: 1.5rem;
+        color: var(--white);
+        transition: color 0.2s;
+
+        &:hover {
+          color: var(--red);
+        }
+      }
+    }
+  }
+}
+
+.pagination {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+
+  margin-top: 1rem;
+
+  .paginationContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 0.5rem;
+    list-style: none;
+
+    a {
+      color: var(--gray-50);
+      cursor: pointer;
+      font-size: 0.9rem;
+
+      padding: 0.5rem 0.75rem;
+      border-radius: 0.5rem;
+      background: var(--black-100);
+      transition: all 0.2s;
+
+      &:hover {
+        background: var(--black);
+        color: var(--gray-50);
+      }
+    }
+  }
+
+  .paginationActive a {
+    color: var(--gray-50);
+    background: var(--black);
+  }
+
+  .paginationDisabled a {
+    background: var(--black-100);
+    color: var(--gray-500);
+    cursor: default;
+
+    &:hover {
+      background: var(--black-100);
+      color: var(--gray-500);
+    }
+  }
+
+  .previousButton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nextButton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

@@ -1,0 +1,146 @@
+.contentModal {
+  h2 {
+    color: var(--white);
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+  }
+
+  input {
+    width: 100%;
+    padding: 0 1.5rem;
+    height: 4rem;
+    border-radius: 1rem;
+
+    border: 0;
+    outline: none;
+    background: var(--gray-50);
+    color: var(--black);
+
+    font-weight: 500;
+    font-size: 1rem;
+
+    &::placeholder {
+      font-size: 0.9rem;
+      color: var(--gray-500);
+    }
+
+    & + input {
+      margin-top: 1.75rem;
+    }
+  }
+
+  button[type="submit"] {
+    width: 100%;
+    padding: 0 1.5rem;
+    height: 4rem;
+    background: var(--purple);
+    color: #fff;
+    font-weight: 600;
+    border-radius: 0.25rem;
+    border: 0;
+    font-size: 1rem;
+    margin-top: 4rem;
+    transition: filter 0.2s;
+
+    &:hover {
+      filter: brightness(0.9);
+    }
+  }
+}
+
+.transactionsButtons {
+  margin: 2rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+
+  .buttonActive {
+    height: 4rem;
+    border-radius: 1rem;
+
+    background: var(--black-50);
+    color: var(--white);
+    border: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: border-color 0.2s;
+
+    &:hover {
+      border-color: var(--gray-300);
+    }
+  }
+
+  button {
+    height: 4rem;
+    border: 1px solid var(--black-100);
+    border-radius: 1rem;
+
+    background: transparent;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: border-color 0.2s;
+
+    &:hover {
+      border-color: var(--gray-500);
+    }
+
+    &:focus {
+      background: var(--black-50);
+      color: var(--white);
+      border: 0;
+    }
+
+    svg {
+      width: 28px;
+      height: 28px;
+    }
+
+    span {
+      display: inline-block;
+      margin-left: 1rem;
+      font-size: 1rem;
+      color: var(--white);
+    }
+  }
+}
+
+.react_modal_overlay {
+  background: rgba(0, 0, 0, 0.5);
+
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.react_modal_content {
+  width: 100%;
+  max-width: 720px;
+  background: var(--black);
+  padding: 3rem;
+  position: relative;
+  border-radius: 0.25rem;
+}
+
+.react_modal_close {
+  position: absolute;
+  right: 1.5rem;
+  top: 1.5rem;
+  border: 0;
+  background: transparent;
+  color: var(--white);
+  transition: filter 0.2s;
+
+  &:hover {
+    filter: brightness(0.8);
+  }
+}

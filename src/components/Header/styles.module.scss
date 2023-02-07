@@ -1,0 +1,72 @@
+.headerContainer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 5rem;
+
+  .title {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+
+    h1 {
+      color: var(--white);
+      font-weight: 600;
+    }
+
+    span {
+      color: var(--gray-300);
+    }
+  }
+
+  .inputMonth {
+    display: flex;
+    align-items: center;
+    border-radius: 100rem;
+    background: var(--black-100);
+    padding: 0.5rem 1rem;
+    // gap: 1.75rem;
+
+    margin-left: auto;
+    width: 12.5rem;
+
+    svg {
+      margin-left: auto;
+      color: var(--white);
+    }
+
+    input {
+      width: 70%;
+      background: var(--black-100);
+      border: 0;
+    }
+
+    input::placeholder {
+      font-size: 1rem;
+      text-align: left;
+      color: var(--white);
+    }
+  }
+
+  button {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    gap: 0.5rem;
+
+    border: 0;
+    border-radius: 1rem;
+    padding: 1rem 1.5rem;
+    background: var(--purple);
+    color: var(--white);
+    transition: filter 0.2s ease;
+
+    svg {
+      color: var(--white);
+    }
+
+    &:hover {
+      filter: brightness(0.95);
+    }
+  }
+}

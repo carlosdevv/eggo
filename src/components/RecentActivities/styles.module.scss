@@ -1,0 +1,116 @@
+.sideContainer {
+  height: 100vh;
+  margin: 0;
+  padding: 2rem 3rem;
+  background: var(--black-10);
+  gap: 5rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.newTransaction {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  p {
+    color: var(--white);
+    font-size: 1.5rem;
+    text-align: center;
+    text-transform: capitalize;
+  }
+  span {
+    color: var(--white);
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  button {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 2.5rem;
+  }
+}
+
+.recentTransactions {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    margin-top: 0.25rem;
+    font-size: 0.9rem;
+    color: var(--gray-300);
+  }
+
+  .transactionItem {
+    display: flex;
+    align-items: center;
+    margin-top: 3rem;
+    height: 40px;
+
+    & + .transactionItem {
+      margin-top: 1.75rem;
+    }
+
+    svg {
+      font-size: 40px;
+      padding: 0.55rem;
+      border-radius: 1rem;
+
+      color: var(--gray-50);
+      background: var(--black);
+    }
+
+    > div {
+      margin-left: 1rem;
+
+      h2 {
+        width: 5rem;
+
+        font-size: 1.1rem;
+        font-weight: 400;
+        color: var(--gray-50);
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        text-transform: capitalize;
+      }
+
+      .transactionHour {
+        color: var(--gray-300);
+        font-size: 0.75rem;
+      }
+    }
+
+    .transactionType {
+      margin-left: 2.5rem;
+      width: 3.75rem;
+      padding: 0.5rem 0;
+      border-radius: 0.5rem;
+      font-size: 0.75rem;
+
+      background: var(--green-dark);
+      color: var(--green);
+      text-align: center;
+    }
+
+    .transactionTypePickup {
+      margin-left: 2.5rem;
+      width: 3.75rem;
+      padding: 0.5rem 0;
+      border-radius: 0.5rem;
+      font-size: 0.75rem;
+
+      background: var(--red-dark);
+      color: var(--red);
+      text-align: center;
+    }
+
+    .transactionAmount {
+      margin-left: auto;
+      color: var(--gray-50);
+    }
+  }
+}
